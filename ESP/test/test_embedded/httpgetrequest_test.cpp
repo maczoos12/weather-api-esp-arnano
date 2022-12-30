@@ -10,7 +10,7 @@ TEST(httpGETRequest, test_correct_page) {
     }
     ASSERT_EQ(WL_CONNECTED, WiFi.status());
 
-    String request_url = "https://api.openweathermap.org/data/2.5/onecall?lat=50.0833&lon=19.9167&exclude=hourly,minutely&units=metric&lang=PL&appid=d5a0a877502889987d2194ce18542caf";
+    String request_url = "*";
     bool expected = 1;
     bool actual = httpGETRequest(request_url);
 
@@ -26,7 +26,7 @@ TEST(httpGETRequest, test_wrong_page) {
     }
     ASSERT_EQ(WL_CONNECTED, WiFi.status());
 
-    String request_url = "https://api.openweathermap/data/necall?lat=50.ude=hourly,minutely&units=metric&lang=PL&appid=d5a0a877502889987d2194ce18542caf";
+    String request_url = "*";
     bool expected = 0;
     bool actual = httpGETRequest(request_url);
 

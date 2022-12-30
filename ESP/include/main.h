@@ -14,7 +14,7 @@ int wait_for_acknowledge_from_arduino(void);
 const char* ssid = "*";
 const char* password = "*";
 
-String request_url = "https://api.openweathermap.org/data/2.5/onecall?lat=50.0833&lon=19.9167&exclude=hourly,minutely&units=metric&lang=PL&appid=d5a0a877502889987d2194ce18542caf";
+String request_url = "*";
 String json_weather;
 WiFiClientSecure wifiClient;
 int httpsPort = 443;
